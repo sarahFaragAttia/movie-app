@@ -1,38 +1,259 @@
-.App {
-  text-align: center;
+* {
+  color: #292D32 !important;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+a {
+  text-decoration: none;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.inputSearch {
+  width: 90%;
+
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.btn.input {
+  width: 10%;
+}
+
+ul.genres {
+  list-style: none;
+
+  padding: 0;
+}
+
+button.input,
+.active,
+nav,
+button,
+li.genres {
+  background-color: #FFE353;
+}
+
+.paginate {
+  list-style: none;
+  width: 30%;
+  margin: auto;
+  padding: 0;
   display: flex;
-  flex-direction: column;
-  align-items: center;
+  flex-direction: row;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
 }
 
-.App-link {
-  color: #61dafb;
+ul.paginate li {
+  width: 30px;
+  border-radius: 10px;
+  text-align: center;
+  font-size: 20px;
+  font-weight: 600;
+  display: inline;
+  margin: 10px;
+
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
+li.previous a,
+li.next a {
+  text-decoration: none;
+  color: #292D32;
+}
+
+@media (max-width:446px) {
+  .inputSearch {
+    margin: 0px !important;
+    width: 85% !important;
   }
-  to {
-    transform: rotate(360deg);
+
+  .inputSearch a {
+    width: 20px !important;
+  }
+
+  .inputSearch button {
+    width: 80px;
+    margin: 0 !important;
+
+  }
+
+  ul.paginate li {
+    margin: 10px;
+  }
+}
+
+option {
+  font-size: 10px;
+}
+
+/* ellipsis */
+.ellipsis {
+
+
+  display: -webkit-box;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  -webkit-line-clamp: 4;
+  -webkit-box-orient: vertical;
+  font-size: 20px;
+  font-weight: 400;
+}
+
+
+@media (max-width:1200px) {
+
+  .favourite h2 {
+    font-size: 18px;
+    font-weight: 300;
+  }
+
+}
+
+div.image img {
+
+  height: 289px;
+  width: 190px;
+}
+
+div.favDetails {
+  margin: 10px;
+  width: 80%;
+}
+
+.favCard {
+  margin-top: 50px;
+  width: 48%;
+  height: 336px;
+  padding: 1rem;
+
+}
+
+.heartIcon {
+  width: 40px !important;
+  height: 40px !important;
+}
+
+@media (max-width:970px) {
+
+  div.image img {
+    height: 250px;
+    width: 120px;
+
+  }
+
+  .ellipsis {
+    font-size: 14px;
+  }
+
+  div.favDetails {
+    margin: 10px;
+  }
+
+  .favCard {
+    height: 300px;
+    width: 49%;
+  }
+
+  .favDetails span {
+    font-size: 14px;
+  }
+
+  .heartIcon {
+    width: 30px !important;
+    height: 30px !important;
+  }
+}
+
+@media (max-width:640px) {
+  .favCard {
+    height: 300px;
+    width: 90%;
+  }
+
+  .favouriteCards {
+    flex-direction: column;
+    align-items: center;
+  }
+}
+
+div.imageDetails img {
+
+  width: 100%;
+  min-width: 260px;
+  height: 618px;
+}
+
+div.imageDetails {
+  width: 30%;
+}
+
+div.movieDetails {
+  width: 63%;
+
+}
+
+div.movieDetails h1,
+.recommendation {
+  font-size: 35px;
+  font-weight: 700;
+}
+
+article {
+  font-size: 20px;
+  font-weight: 400;
+}
+
+li.genres {
+  display: inline-block !important;
+  /* width: 11px; */
+  text-align: center;
+
+}
+
+.companies {
+  width: 20%;
+  height: 47px;
+}
+
+.language span {
+  display: inline-block;
+}
+
+@media (max-width:800px) {
+  div.movieDetails {
+    width: 60%;
+  }
+
+  /* div.movieDetails h1, .recommendation{
+    font-size: 48px;
+    font-weight:700 ;
+  } */
+  article {
+    font-size: 20px;
+    font-weight: 400;
+  }
+
+  .ranking {
+    width: 20px;
+    height: 20px;
+  }
+
+  .language {
+    font-size: 16px !important;
+  }
+}
+
+@media (max-width:768px) {
+  .detailSection {
+    flex-direction: column !important;
+    align-items: center;
+  }
+
+  .movieDetails {
+    align-self: flex-start;
+    margin-top: 20px;
+  }
+
+  div.imageDetails {
+    width: 50%;
+  }
+
+  div.movieDetails {
+    width: 100%;
   }
 }
